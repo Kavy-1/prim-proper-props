@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import DinnerSupplies from '../DinnerSupplies/DinnerSupplies'
+=======
 import GuestList from '../GuestList/GuestList';
 import GuestForm from '../GuestForm/GuestForm';
 import Footer from '../Footer/Footer'
@@ -39,6 +41,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.guestList);
     return (
       <div className="App">
         <Header />
@@ -87,6 +90,13 @@ class App extends Component {
 
 
         <h2>Dinner Supplies</h2>
+
+        <DinnerSupplies count={this.state.guestList.length}/>
+        <footer>
+          <h3>Have fun!</h3>
+          <p>Don't forget to mind your Ps and Qs!</p>
+        </footer>
+
         <div>
           Spoons: {this.state.guestList.length * 2}
         </div>
@@ -97,6 +107,7 @@ class App extends Component {
           Knives: {this.state.guestList.length * 2}
         </div>
         <Footer />
+
       </div>
     );
   }
