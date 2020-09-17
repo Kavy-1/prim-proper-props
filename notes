@@ -6,11 +6,19 @@
 
 HEADER - Jim
 ----
+
 [ ] h1 
+=======
+[x] h1
+
 
 FOOTER - Jim
 ----
+
 [ ] footer tag 
+=======
+[x] footer tag
+
 
 GUEST LIST - Ethan
 ----
