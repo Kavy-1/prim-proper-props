@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import GuestList from '../GuestList/GuestList';
 
+import GuestForm from '../GuestForm/GuestForm';
+
+=======
+import Footer from '../Footer/Footer'
+import Header from '../Header/Header'
+
 class App extends Component {
   state = {
     guestList: [],
@@ -23,26 +29,25 @@ class App extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     if (this.state.newGuest.name) {
-      this.setState({
+        this.setState({
         guestList: [...this.state.guestList, this.state.newGuest],
         newGuest: {
-          name: '',
-          kidsMeal: 'no',
+            name: '',
+            kidsMeal: 'no',
         },
-      });
+        });
     } else {
-      alert('The new guest needs a name!');
+        alert('The new guest needs a name!');
     }
   }
 
   render() {
     return (
       <div className="App">
-        <header>
-          <h1>Prim Proper Props</h1>
-        </header>
+        <Header />
         <h2>Party Leader</h2>
         {this.state.guestList[0] && <h3>{this.state.guestList[0].name}</h3>}
+ feature-guest-list
         <h2>Add a new guest</h2>
         <form onSubmit={this.handleSubmit}>
           <label>
@@ -83,6 +88,8 @@ class App extends Component {
           <button type="submit">Add Guest</button>
         </form>
         <GuestList guests={this.state.guestList} />
+
+
         <h2>Dinner Supplies</h2>
         <div>
           Spoons: {this.state.guestList.length * 2}
@@ -93,10 +100,7 @@ class App extends Component {
         <div>
           Knives: {this.state.guestList.length * 2}
         </div>
-        <footer>
-          <h3>Have fun!</h3>
-          <p>Don't forget to mind your Ps and Qs!</p>
-        </footer>
+        <Footer />
       </div>
     );
   }
