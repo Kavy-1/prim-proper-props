@@ -1,0 +1,31 @@
+[ ] import react (top of page)
+[ ] export component (bottom of page)
+[ ] create JSX structure (render, return)
+[ ] console.log in functions with any params
+[ ] import components into App.js file
+
+HEADER
+----
+[ ] h1
+
+FOOTER
+----
+[ ] footer tag
+
+GUEST LIST
+----
+[ ] move guest list portion of state to GuestList 
+ -- guests={this.state.guestList}
+[ ] 84-100
+
+DINNER SUPPLIES
+----
+[ ] DinnerSupplies count={this.state.guestList.length}
+[ ] 101-110
+
+GUEST FORM
+-----
+[ ] 45-83
+[ ] newGuest={this.state.newGuest}
+[ ] handleChangeFor={this.handleChangeFor}
+[ ] handleSubmit={this.handleSubmit}
