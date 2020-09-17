@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Footer from '../Footer/Footer'
+import Header from '../Header/Header'
 class App extends Component {
   state = {
     guestList: [],
@@ -37,9 +38,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <h1>Prim Proper Props</h1>
-        </header>
+        <Header />
         <h2>Party Leader</h2>
         {this.state.guestList[0] && <h3>{this.state.guestList[0].name}</h3>}
         <h2>Add a new guest</h2>
@@ -108,10 +107,7 @@ class App extends Component {
         <div>
           Knives: {this.state.guestList.length * 2}
         </div>
-        <footer>
-          <h3>Have fun!</h3>
-          <p>Don't forget to mind your Ps and Qs!</p>
-        </footer>
+        <Footer />
       </div>
     );
   }
