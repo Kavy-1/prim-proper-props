@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import DinnerSupplies from '../DinnerSupplies/DinnerSupplies'
 
 class App extends Component {
   state = {
@@ -35,6 +36,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.guestList);
     return (
       <div className="App">
         <header>
@@ -99,15 +101,7 @@ class App extends Component {
           </tbody>
         </table>
         <h2>Dinner Supplies</h2>
-        <div>
-          Spoons: {this.state.guestList.length * 2}
-        </div>
-        <div>
-          Forks: {this.state.guestList.length * 2}
-        </div>
-        <div>
-          Knives: {this.state.guestList.length * 2}
-        </div>
+        <DinnerSupplies count={this.state.guestList.length}/>
         <footer>
           <h3>Have fun!</h3>
           <p>Don't forget to mind your Ps and Qs!</p>
