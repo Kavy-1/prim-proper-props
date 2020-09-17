@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import GuestList from '../GuestList/GuestList';
 
 class App extends Component {
   state = {
@@ -81,23 +82,7 @@ class App extends Component {
           </div>
           <button type="submit">Add Guest</button>
         </form>
-        <h2>Guest List</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Kid's Meal</th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.state.guestList.map(guest => (
-              <tr key={guest.name}>
-                <td>{guest.name}</td>
-                <td>{guest.kidsMeal}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <GuestList guests={this.state.guestList} />
         <h2>Dinner Supplies</h2>
         <div>
           Spoons: {this.state.guestList.length * 2}
