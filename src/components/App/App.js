@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import GuestList from '../GuestList/GuestList';
-
 import GuestForm from '../GuestForm/GuestForm';
-
-=======
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 
@@ -47,7 +44,6 @@ class App extends Component {
         <Header />
         <h2>Party Leader</h2>
         {this.state.guestList[0] && <h3>{this.state.guestList[0].name}</h3>}
- feature-guest-list
         <h2>Add a new guest</h2>
         <form onSubmit={this.handleSubmit}>
           <label>
