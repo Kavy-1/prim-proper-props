@@ -4,28 +4,36 @@
 [ ] console.log in functions with any params
 [ ] import components into App.js file
 
-HEADER
+HEADER - Jim
 ----
+
+[ ] h1 
+=======
 [x] h1
 
-FOOTER
+
+FOOTER - Jim
 ----
+
+[ ] footer tag 
+=======
 [x] footer tag
 
-GUEST LIST
+
+GUEST LIST - Ethan
 ----
 [ ] move guest list portion of state to GuestList 
  -- guests={this.state.guestList}
 [ ] 84-100
 
-DINNER SUPPLIES
+DINNER SUPPLIES - Coop
 ----
 [ ] DinnerSupplies count={this.state.guestList.length}
 [ ] 101-110
 
-GUEST FORM
+GUEST FORM - Ash
 -----
-[ ] 45-83
+[x] 45-83
 [ ] newGuest={this.state.newGuest}
 [ ] handleChangeFor={this.handleChangeFor}
 [ ] handleSubmit={this.handleSubmit}
