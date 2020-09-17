@@ -21,18 +21,18 @@ class App extends Component {
   }
 
   handleSubmit = (event) => {
-  event.preventDefault();
-  if (this.state.newGuest.name) {
-      this.setState({
-      guestList: [...this.state.guestList, this.state.newGuest],
-      newGuest: {
-          name: '',
-          kidsMeal: 'no',
-      },
-      });
-  } else {
-      alert('The new guest needs a name!');
-  }
+    event.preventDefault();
+    if (this.state.newGuest.name) {
+        this.setState({
+        guestList: [...this.state.guestList, this.state.newGuest],
+        newGuest: {
+            name: '',
+            kidsMeal: 'no',
+        },
+        });
+    } else {
+        alert('The new guest needs a name!');
+    }
   }
 
   render() {
