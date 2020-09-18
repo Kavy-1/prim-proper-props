@@ -8,6 +8,7 @@ class DinnerSupplies extends Component{
         return (
 
 <div>
+    <h2>Dinner Supplies</h2>
     <div>
     Spoons: {this.props.count * 2}
     </div>
